@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:design="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Sen_us_messgae">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/Message_us_id"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            android:background="@drawable/side_nav_bar"
+            design:titleTextColor="@color/colorPrimary"
+            app:title=" "
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <TextView
+                android:id="@+id/toolbar_title_reg_add_offer_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message US"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/chat"
+            android:layout_marginTop="25dp"
+            android:id="@+id/message_logo"
+            android:layout_below="@+id/Message_us_id"
+            android:layout_centerHorizontal="true"
+    />
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/message_logo">
+        <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center|top"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/message_logo"
+                card_view:cardCornerRadius="4dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Message US"
+                        android:id="@+id/Title_messgae"
+                        android:layout_marginTop="10dp"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                />
+                <EditText
+                        android:id="@+id/message_body"
+                        android:layout_below="@+id/Title_messgae"
+                        android:layout_width="300dp"
+                        android:layout_marginTop="10dp"
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:minLines="6"
+                        android:layout_margin="10dp"
+                        android:gravity="top|left"
+                        android:maxLines="10"
+                        android:scrollbars="vertical"
+                        android:layout_height="150dp"
+                        android:hint="Write Your Message... "
+                        android:background="@drawable/rounded_txt_box"
+                />
+                <Button
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/send_btn"
+                        android:text="Send Message"
+                        android:background="@drawable/rounded_btn"
+                        android:layout_below="@+id/message_body"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="20dp"
+                />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+
+            </RelativeLayout>

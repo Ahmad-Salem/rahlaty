@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:design="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        tools:context="com.example.ahmedsalemalbiady.rahlaty.AboutUs">
+
+    <android.support.v7.widget.Toolbar
+            android:elevation="10dp"
+            android:id="@+id/activity_toolbar"
+            android:background="@drawable/backgorund_about_us"
+            design:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:title=" "
+            android:layoutDirection="ltr"
+            android:textDirection="ltr" >
+        <TextView
+                android:id="@+id/toolbar_main_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:layout_marginTop="-10dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="top|center" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:id="@+id/photo_bg"
+            android:elevation="10dp"
+            android:layout_marginTop="-150dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/background_about_us_photo"
+            android:layout_below="@+id/activity_toolbar">
+        <ImageView
+                android:id="@+id/trip_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/logo1"
+                android:scaleType="fitXY" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/title_container"
+    android:layout_toRightOf="@+id/photo_bg"
+    android:layout_marginLeft="10dp"
+    android:elevation="20dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Rahlaty Mobile"
+                  android:layout_marginTop="80dp"
+                  android:textColor="@color/white"
+                  android:textSize="25dp"
+                  android:id="@+id/city_text"
+                  android:layout_centerHorizontal="true"
+                  android:textStyle="bold"
+                  android:shadowColor="#7F000000"
+                  android:shadowDx="2"
+                  android:shadowDy="2"
+                  android:shadowRadius="1"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Application"
+                  android:layout_marginTop="0dp"
+                  android:textColor="@color/white"
+                  android:textSize="25dp"
+                  android:id="@+id/city_text2"
+                  android:layout_below="@+id/city_text"
+                  android:layout_centerHorizontal="true"
+                  android:textStyle="bold"
+                  android:shadowColor="#7F000000"
+                  android:shadowDx="2"
+                  android:shadowDy="2"
+                  android:shadowRadius="1"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Lunched Feb 2019"
+                  android:layout_marginTop="10dp"
+                  android:textColor="#ccc"
+                  android:textSize="16dp"
+                  android:id="@+id/city_text3"
+                  android:layout_below="@+id/city_text2"
+                  android:layout_centerHorizontal="true"
+                  android:textStyle="bold"
+                  android:shadowColor="#7F000000"
+                  android:shadowDx="2"
+                  android:shadowDy="2"
+                  android:shadowRadius="1"
+        />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center|top"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/title_container"
+            card_view:cardCornerRadius="4dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About This Application:"
+                    android:id="@+id/Title_user"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rahlaty app Helps you to have nice time with your Holiday... Set Back and Relax ... Leave Every thing to us ... Your Enjoyment in trusted hands... with us You can get best services and Travel programs ..."
+                    android:id="@+id/Title_user_value"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/Title_user"
+                    android:layout_marginTop="0dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+            />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

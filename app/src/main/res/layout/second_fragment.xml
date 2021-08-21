@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/first_fragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="00dp"
+                    android:layout_height="200dp"
+                    android:background="#eee"
+                    android:id="@+id/layout1"
+            >
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/background_details"
+                        android:scaleType="fitXY"
+                        android:id="@+id/trip_photo1"
+                />
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Sharm Elshiekh"
+                          android:layout_marginTop="80dp"
+                          android:textColor="@color/white"
+                          android:textSize="25dp"
+                          android:id="@+id/city_text"
+                          android:layout_centerHorizontal="true"
+                          android:textStyle="bold"
+                          android:shadowColor="#7F000000"
+                          android:shadowDx="2"
+                          android:shadowDy="2"
+                          android:shadowRadius="1"
+                />
+
+
+
+            </RelativeLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/linebelowmainimageview"
+                    android:layout_below="@+id/layout1"
+                    android:background="@android:color/darker_gray"/>
+
+            <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layoutDirection="ltr"
+                    android:textDirection="ltr"
+                    android:layout_marginBottom="30dp"
+                    android:layout_gravity="center|top"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/linebelowmainimageview"
+                    card_view:cardCornerRadius="4dp">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/calendar"
+                                android:id="@+id/icon_days"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Travel Date"
+                                android:layout_toRightOf="@+id/icon_days"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:textColor="@color/dark_black"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/header_days"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9 Days"
+                                android:textColor="@color/dark_black"
+                                android:layout_toRightOf="@+id/icon_days"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/header_days"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20sp"
+                                android:id="@+id/body_days"
+                        />
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/body_days"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element2"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_below="@+id/element"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/school"
+                                android:layout_marginTop="6dp"
+                                android:id="@+id/icon_days2"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distination City"
+                                android:textColor="@color/dark_black"
+                                android:layout_toRightOf="@+id/icon_days2"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/header_days2"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9 Days"
+                                android:textColor="@color/dark_black"
+                                android:layout_toRightOf="@+id/icon_days2"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/header_days2"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20sp"
+                                android:id="@+id/body_days2"
+                        />
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/body_days2"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element3"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_below="@+id/element2"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/alarm_clock"
+                                android:id="@+id/icon_days3"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DAYS"
+                                android:layout_toRightOf="@+id/icon_days3"
+                                android:textStyle="bold"
+                                android:textColor="@color/dark_black"
+                                android:textSize="25dp"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/header_days3"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9 Days"
+                                android:layout_toRightOf="@+id/icon_days3"
+                                android:textStyle="bold"
+                                android:textColor="@color/dark_black"
+                                android:layout_below="@+id/header_days3"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20sp"
+                                android:id="@+id/body_days3"
+                        />
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/body_days3"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element4"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_below="@+id/element3"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/staying"
+                                android:id="@+id/icon_days4"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Staying"
+                                android:layout_toRightOf="@+id/icon_days4"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:textColor="@color/dark_black"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/header_days4"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9 Days"
+                                android:layout_toRightOf="@+id/icon_days4"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/header_days4"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20sp"
+                                android:id="@+id/body_days4"
+                                android:textColor="@color/dark_black"
+                        />
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/body_days4"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element5"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_below="@+id/element4"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/school_bus"
+                                android:id="@+id/icon_days5"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bus Information"
+                                android:layout_toRightOf="@+id/icon_days5"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:textColor="@color/dark_black"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/header_days5"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9 Days"
+                                android:layout_toRightOf="@+id/icon_days5"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/header_days5"
+                                android:textSize="12dp"
+                                android:textColor="@color/dark_black"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20sp"
+                                android:id="@+id/body_days5"
+                        />
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/body_days5"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element6"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_below="@+id/element5"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/notes"
+                                android:id="@+id/icon_days6"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trip Program"
+                                android:layout_toRightOf="@+id/icon_days6"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:textColor="@color/dark_black"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/header_days6"
+                        />
+                        <ScrollView android:layout_width="wrap_content"
+                                    android:id="@+id/nested"
+                                    android:layout_below="@+id/header_days6"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:text="9 Days"
+                                    android:textColor="@color/dark_black"
+                                    android:layout_marginTop="20dp"
+                                    android:textDirection="rtl"
+                                    android:layout_gravity="end"
+                                    android:layout_toRightOf="@+id/icon_days6"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/header_days6"
+                                    android:textSize="14dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginBottom="20sp"
+                                    android:id="@+id/body_days6"
+                            />
+                        </ScrollView>
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/nested"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element7"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_below="@+id/element6"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/money"
+                                android:id="@+id/icon_days7"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price"
+                                android:layout_toRightOf="@+id/icon_days7"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="@color/dark_black"
+                                android:id="@+id/header_days7"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9 Days"
+                                android:layout_toRightOf="@+id/icon_days7"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/header_days7"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="@color/dark_black"
+                                android:layout_marginBottom="20sp"
+                                android:id="@+id/body_days7"
+                        />
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/body_days7"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/element8"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_below="@+id/element7"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                    >
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/sketch"
+                                android:id="@+id/icon_days8"
+                                android:layout_marginBottom="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_black"
+                                android:text="Trip Completion"
+                                android:layout_toRightOf="@+id/icon_days8"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/header_days8"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9 Days"
+                                android:layout_toRightOf="@+id/icon_days8"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/header_days8"
+                                android:textSize="12dp"
+                                android:textColor="@color/dark_black"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20sp"
+                                android:id="@+id/body_days8"
+                        />
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@+id/body_days8"
+                                android:background="@android:color/darker_gray"/>
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/Book_now"
+                android:text="Book Now"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rectangle_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="0dp"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

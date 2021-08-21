@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:layout_marginTop="111dp"
+    android:background="@android:color/transparent">
+
+    <ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:id="@+id/progress_horz"
+    android:layout_gravity="top"
+    android:layout_marginTop="-4dp"
+    android:progressDrawable="@drawable/custom_progress"
+    android:background="@android:color/transparent"
+    android:progress="20"
+    style="?android:attr/progressBarStyleHorizontal"/>
+    </FrameLayout>
+
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/loading_layout"
+                    android:layout_marginTop="180dp">
+        <ImageView
+                android:id="@+id/trip_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo1"
+                android:scaleType="fitXY" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:layout_marginTop="10dp"
+                android:id="@+id/loading_tv"
+                android:layout_below="@+id/trip_photo"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+        />
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/retry"
+                android:text="Refresh"
+                android:background="@drawable/rounded_btn"
+                android:layout_below="@+id/loading_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+
+        />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:visibility="visible"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

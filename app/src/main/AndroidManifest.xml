@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.ahmedsalemalbiady.rahlaty">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:hardwareAccelerated="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".startupScreens.StartUp">
+        </activity>
+        <activity android:name=".OnBoard">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/title_activity_main"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name=".unused.Display_user_account_info"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".unused.Edit_user_info">
+        </activity>
+        <activity
+                android:name=".unused.new_user_registeration"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".Call_us"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".Sen_us_messgae"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".Register_new_user"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".Details_activity"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".Edit_user_account"
+                android:parentActivityName=".user_profile">
+        </activity>
+        <activity
+                android:name=".user_profile"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".Sign_up"
+                android:parentActivityName=".Register_new_user">
+        </activity>
+        <activity android:name=".AboutUs"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>
